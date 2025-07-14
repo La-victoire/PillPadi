@@ -6,7 +6,7 @@ PillPadi is a modern health-tech platform designed to help individuals and clini
 
 ## 🚀 Live Demo
 
-[Visit PillPadi](https://your-live-site-url.com)
+[Visit PillPadi](https://pill-padi.vercel.app)
 
 ---
 
