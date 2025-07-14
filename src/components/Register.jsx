@@ -40,6 +40,7 @@ const Register = () => {
       </p>
       <form onSubmit={handleSubmit} className='flex gap-2 mt-5'>
         <Input 
+        id="register"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
