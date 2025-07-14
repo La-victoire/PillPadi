@@ -10,6 +10,13 @@ const Header = () => {
     {name:"About", path:"/about-pillpadi"},
     {name:"Contact", path:"/contact-us"}
   ]
+
+
+   function JoinWaitlistButton() {
+  const handleClick = () => {
+    document.getElementById("register")?.scrollIntoView({ behavior: "smooth" });
+  };
+};
   return (
     <>
     <nav className='h-[80px] justify-around flex'>
@@ -30,7 +37,9 @@ const Header = () => {
           </div>
       </div>
       <div className='flex justify-center items-center'>
-        <Button className='bg-[#0039B5]'>Join the Waitlist</Button>
+        <Button
+        onClick={handleClick}
+ className='bg-[#0039B5]'>Join the Waitlist</Button>
       </div>
     </nav>
     </>
