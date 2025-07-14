@@ -8,7 +8,9 @@ const LayoutB = () => {
   return (
     <>
     <Header />
+    <main>
     <Outlet />
+    </main>
     <Register />
     <FooterB />
     </>

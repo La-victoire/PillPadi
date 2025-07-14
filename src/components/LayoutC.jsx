@@ -7,7 +7,9 @@ const LayoutC = () => {
   return (
     <>
     <Header />
+    <main>
     <Outlet />
+    </main>
     <FooterB />
     </>
   )

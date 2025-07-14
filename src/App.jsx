@@ -51,10 +51,8 @@ const App = () => {
       <Route element={<LayoutC />}>
         <Route path='/contact-us' element={<Contact />} />
         <Route path='/terms-and-condition' element={<Privacy />} />
-
       </Route>
     </Routes>
-    <Toaster position='top-center' richColors closeButton />
     </>
    )}
    </>

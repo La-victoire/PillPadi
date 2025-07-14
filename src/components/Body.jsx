@@ -61,12 +61,12 @@ const Body = () => {
         }
       </div>
     </section>
-    <section className='my-20'>
+    <section className='my-20 px-10'>
       <h2>How PillPadi Works for You</h2>
-      <div className='item-row'>
+      <div className='lg:item-row item-col flex-center'>
         {howItWorks.map(({title,description,img}) => (
-          <Card className="pt-0 gap-2 rounded-2xl">
-            <img className='h-[42dvh]' src={img} alt={title} />
+          <Card className="pt-0 gap-2 lg:w-full w-1/2 rounded-2xl">
+            <img className='lg:h-[42dvh] ' src={img} alt={title} />
             <div className='text-center px-5'>
               <h3>{title}</h3>
               <p>{description}</p>
