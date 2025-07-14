@@ -7,7 +7,7 @@ const LayoutC = () => {
   return (
     <>
     <Header />
-    <main>
+    <main className='min-h-screen'>
     <Outlet />
     </main>
     <FooterB />
