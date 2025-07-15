@@ -9,14 +9,14 @@ const Privacy = () => {
       <h1>Privacy & Terms</h1>
       <p>Last updated: {TERMS.LAST_UPDATED}</p>
       <p>{TERMS.INTRO_TEXT}</p>
-      {TERMS.SECTIONS.map((term)=> (
+      {TERMS.SECTIONS.map((term, index)=> (
         <div>
           <Accordion
           type="single"
           collapsible
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger><h3>{term.title}</h3></AccordionTrigger>
+              <AccordionTrigger><ol className='text-3xl font-medium'>{index}. {term.title}</ol></AccordionTrigger>
               <AccordionContent>
                 {Array.isArray(term.content) ? term.content.map((item)=>(
                   <li>{item}</li>
