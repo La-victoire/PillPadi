@@ -103,7 +103,7 @@ const Contact = () => {
           <Textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Full Name" />
+          placeholder="Your message..." />
         </div>
         <div>
           <Button
