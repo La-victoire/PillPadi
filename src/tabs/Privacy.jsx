@@ -5,14 +5,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const Privacy = () => {
   return (
     <>
-    <section>
+    <section className='item-col justify-start items-start'>
       <h1>Privacy & Terms</h1>
       <p>Last updated: {TERMS.LAST_UPDATED}</p>
       <p>{TERMS.INTRO_TEXT}</p>
       {TERMS.SECTIONS.map((term)=> (
-        <div          
-        className="item-col justify-start items-start"
-        >
+        <div>
           <Accordion
           type="single"
           collapsible

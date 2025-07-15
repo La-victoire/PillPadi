@@ -6,7 +6,7 @@ const FeatureBody = () => {
     <>
     <section>
      {features.map(({title,description,img}, index)=> (
-      <div className={`${index % 2 === 0 ? ('item-row') : ("flex flex-row-reverse gap-5")} py-10 flex-center gap-5`}>
+      <div key={title} className={`${index % 2 === 0 ? ('item-row') : ("flex flex-row-reverse gap-5")} py-10 flex-center gap-5`}>
         <div className='w-[352px] h-[238px] gap-0 item-col justify-start items-start'>
           <h3>{title}</h3>
           <p>{description}</p>

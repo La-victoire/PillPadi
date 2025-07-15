@@ -65,7 +65,7 @@ const Body = () => {
       <h2>How PillPadi Works for You</h2>
       <div className='lg:item-row item-col flex-center'>
         {howItWorks.map(({title,description,img}) => (
-          <Card className="pt-0 gap-2 lg:w-full w-1/2 rounded-2xl">
+          <Card key={title} className="pt-0 gap-2 lg:w-full w-1/2 rounded-2xl">
             <img className='lg:h-[42dvh] ' src={img} alt={title} />
             <div className='text-center px-5'>
               <h3>{title}</h3>
@@ -84,6 +84,7 @@ const Body = () => {
       </p>
       <form onSubmit={handleSubmit} className='flex gap-2 mt-5'>
         <Input 
+        id="register"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}

@@ -38,17 +38,20 @@ const Register = () => {
       <p>
        Sign up now to get early access when we launch for individuals and healthcare providers!
       </p>
-      <form onSubmit={handleSubmit} className='flex gap-2 mt-5'>
-        <Input 
-        id="register"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Johnsmith@company.com" 
-        required/>
-        <Button
-        type="submit"
-        className="bg-[#0039B5]">Join the Waitlist</Button>
+      <form
+        onSubmit={handleSubmit} 
+        className='flex gap-2 mt-5'
+        >
+          <Input 
+          id="register"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Johnsmith@company.com" 
+          required/>
+          <Button
+          type="submit"
+          className="bg-[#0039B5]">Join the Waitlist</Button>
       </form>
     </section>
   )

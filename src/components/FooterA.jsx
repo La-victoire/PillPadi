@@ -23,7 +23,7 @@ const Footer = () => {
         <p>Developed by La_Victoire</p>
       </div>
     </div>
-    <div clasName="item-col gap-5">
+    <div className="item-col gap-5">
       <p className='font-medium'>Follow Us</p>
       <div className='item-row gap-5'>
           <div className='border flex-center border-white h-7 w-7 rounded-full'>
